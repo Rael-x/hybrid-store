@@ -1,0 +1,27 @@
+@use 'header';
+@use 'sidebar/sidebar';
+@use './home/home';
+@use './product/product';
+@use './checkout/checkout';
+@use './cartpage/cart';
+@use 'slide';
+@use 'item';
+@use 'banner';
+@use 'footer';
+@use 'misc';
+@import 'variables';
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $tertiaryColor;
+}
+#cart-items {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+// html::-webkit-scrollbar {
+//     display: none;
+// }

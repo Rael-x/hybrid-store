@@ -1,0 +1,36 @@
+.big-slide {
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    .big-slide-inner {
+        color: white;
+        padding: 0 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30pt;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, black, transparent);
+        span {
+            width: 35%;
+        }
+        .shop-prompt {
+            margin-top: 2%;
+            padding: 1% 2%;
+            border: 2px solid white;
+            border-radius: 3px;
+            text-decoration: none;
+            color: inherit;
+            font-size: 13pt;
+            width: fit-content;
+            transition-duration: 300ms;
+            &:hover {
+                background-color: white;
+                color: black;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

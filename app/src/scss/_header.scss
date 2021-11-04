@@ -1,0 +1,80 @@
+@import 'variables';
+
+.hybridHeader {
+    position: fixed;
+    top: 0;
+    height: $headerHeight;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    width: 96%;
+    box-shadow: 0 0 2px 0 $fourthColor;
+    justify-content: space-between;
+    background-color: $themeColor;
+    color: $secondaryColor;
+    padding: 0 2%;
+    .header-left, .header-right {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .comp-Name {
+            margin-left: 5%;
+            text-decoration: none;
+            color: inherit;
+            font-size: 19pt;
+        }
+    }
+    .header-right {
+        justify-content: space-between;
+        width: 7%;
+    }
+    form {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        input[type='text'] {
+            padding-left: 2%;
+            height: 70%;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            background: $tertiaryColor;
+            &::placeholder {
+                color: $fourthColor;
+            }
+        }
+        input[type='submit']{
+            margin-left: 2%;
+            padding: 0 2%;
+            height: 70%;
+            background: blue;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition-duration: 300ms;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+    .cart-icon-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .cart-icon {
+            height: 45%;
+        }
+    }
+        .login-btn {
+            background-color: white;
+            padding: 1%;
+            border-radius: 4px;
+            color: blue;
+            font-size: 13pt;
+            text-decoration: none;
+        }

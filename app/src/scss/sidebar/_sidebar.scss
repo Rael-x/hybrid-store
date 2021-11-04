@@ -1,0 +1,18 @@
+@import '../variables';
+
+.sideBarButton {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .sideBarButtonLine {
+        height: 7%;
+        margin: 6% 0;
+        width: 60%;
+        border-radius: 3px;
+        background: $secondaryColor;
+    }
+}

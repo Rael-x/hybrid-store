@@ -1,0 +1,39 @@
+@import 'variables';
+// Banner for Slider
+.banner {
+    height: 85%;
+    width: 390px;
+    overflow: hidden;
+    background-color: $secondaryColor;
+    background-position: center;
+    background-size: cover;
+    // border-radius: 10px;
+    margin-right: 2%;
+    &-inner {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        span {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            color: white;
+            font-size: 16pt;
+            text-overflow: ellipsis;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+// Banner2
+.db-banner {
+    height: 85%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48%;
+    // border-radius: 13px;
+}

@@ -1,0 +1,18 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.flex {
+    display: flex;
+}
+.cx {
+    justify-content: center;
+}
+.cy {
+    align-items: center;
+}
+.horizontalLine{
+    margin: 0;
+    border-top: 0.9px;
+}

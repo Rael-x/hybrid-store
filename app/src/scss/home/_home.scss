@@ -1,0 +1,106 @@
+@import '../variables';
+
+.home {
+    margin-top: $headerHeight;
+    .section-heading {
+        color: $secondaryColor;
+        margin-left: 2%;
+        font-size: 21pt;
+    }
+    .homeSection {
+        // big-slideshow
+        &-big-slideshow-outer-layer {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            height: 420px;
+            overflow-x:scroll;
+            scroll-behavior: smooth;
+            margin-bottom: 21px;
+            .homeSection-big-slideshow-container {
+                width: 500%;
+                height: 100%;
+                display: flex;
+            }
+        }
+        
+        // banner-slider
+        &-banner-slider-outer-layer {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            height: 350px;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            margin-bottom: 15px;
+            .homeSection-banner-slider-container {
+                display: flex;
+                width: fit-content;
+                margin-left: 2%;
+                align-items: center;
+                height: 100%;
+            }
+        }
+
+        // item-row
+        &-item-row {
+            height: 600px;
+            display: grid;
+            padding: 0 2%;
+            grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+            grid-template-rows: 47.5% 47.5%;
+            column-gap: 2%;
+            row-gap: 5%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            .homeSection-item {
+                background: $secondaryColor;
+            }
+        }
+
+        // button-row 
+        &-button-row {
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4.5px;
+            &-item {
+                margin: 0 2%;
+                display: flex;
+                font-size: 11pt;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                height: 80%;
+                padding: 0 2%;
+                width: 12%;
+            }
+            .btn-1 {
+                background-color: black;
+            }
+            .btn-2 {
+                background-color: #6c1da7;
+            }
+            .btn-3 {
+                background-color: #09369a;
+            }
+            .btn-4 {
+                background-color: #da8419;
+            }
+            .btn-5 {
+                background-color: #308206;
+            }
+        }
+
+        // double-banner
+        &-double-banner {
+            height: 355px;
+            padding: 0 2%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35.5px;
+        }
+    }
+}

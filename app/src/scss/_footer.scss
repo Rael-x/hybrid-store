@@ -1,0 +1,59 @@
+@import 'variables';
+
+.hybridFooter {
+    height: 400px;
+    background-color: $themeColor;
+    color: $secondaryColor;
+    .email-newsletter-prompt {
+        height: 74px;
+        width: 96%;
+        padding: 0 2%;
+        display: flex;
+        border-bottom: 2px solid;
+        .newslet-1, .newslet-2 {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .newslet-1 {
+            font-weight: bold;
+            font-size: 17pt;
+            text-align: initial;
+        }
+        form {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            input[type='email'] {
+                height: 52%;
+                border: 2px solid #2626f0;
+                width: 74%;
+            }
+            input[type='submit']{
+                height: 58%;
+                background: $secondaryColor;
+                border: none;
+                color: $themeColor;
+            }
+        }
+    }
+    .footer-options {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 5%;
+        ul > li {
+            list-style: none;
+            margin: 7% 0;
+            font-size: 10pt;
+            a {text-decoration: none; color: inherit}
+        }
+    }
+    .copyright {
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+}
