@@ -5,7 +5,7 @@ import '../../css/hybrid.css'
 
 const Slide = (props) => {
     return (
-        <div style={{backgroundColor: props.bgColor?props.bgColor:'blue', backgroundImage: `url(../img/slide-${props.slide}.jpg)`}} className='big-slide'>
+        <div style={{backgroundImage: `url(../img/slide-${props.slide}.jpg)`}} className='big-slide'>
             <div className="big-slide-inner">
                 <span>Household Interiors, seliing for 15% off.</span>
                 <Link to='/store' className="shop-prompt">Shop Now</Link>

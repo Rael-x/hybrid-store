@@ -7,13 +7,15 @@ import Item from '../Global/Item'
 import {items} from '../../data/items'
 // CSS
 import '../../css/hybrid.css'
+import { slideInAnimation } from '../Global/func'
 
 const Home = () => {
     React.useEffect(()=>{
+        slideInAnimation('.home');
         document.title = 'Hybrid - The Best Prices On the Internet';
     }, [])
     return (
-        <main className='home'>
+        <main className='home webpage-hidden'>
             <HomeSection type="big-slideshow">
                 <Slide bgColor='blue' slide={1}/>
             </HomeSection>

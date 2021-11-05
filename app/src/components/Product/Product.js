@@ -3,16 +3,18 @@ import StarRating from '../Global/StarRating';
 import { items } from '../../data/items';
 import { cart } from '../../data/cart';
 import '../../css/hybrid.css'
+import { slideInAnimation } from '../Global/func';
 
-const ProductPage = ({match}) => {
+const ProductPage = ({match}) => {    
     let initialBtn = {prompt: 'ADD TO CART', color: 'blue', func: e =>{addtoCart(e)}};
     const [button, setButton] = React.useState(initialBtn);
     const [quantityError, setQuantityError] = React.useState('');
     let cancelBtn = {prompt: 'REMOVE FROM CART', color: 'red', func: e =>{removeFromCart(e)}};
     React.useEffect(()=>{
         document.querySelector('html').scrollTop = 0;
+        slideInAnimation('.product-page');
+        if (cart.contains(items[match.params.id])) setButton(cancelBtn);
     }, [match.params.id])
-
     function removeFromCart (e) {
         e.preventDefault();
         cart.remove(items[match.params.id].id);
@@ -34,17 +36,10 @@ const ProductPage = ({match}) => {
             setQuantityError('')
             setButton(cancelBtn);
         }
-        // if (0 < quantity && quantity <=items[match.params.id].units){
-        //    
-        // } else if (!quantity) {
-        //     console.log(9);
-        //     setQuantityError('Please enter a quantity to purchase. ')
-        // }
-        // else setQuantityError(`There are only ${items[match.params.id].units} units of this product available. `)
     }
 
     return (
-        <main className='product-page'>
+        <main className='product-page webpage-hidden'>
             <div className='product-address'>Home/ Store/ {items[match.params.id].category}<span className='product-dir'>/ {items[match.params.id].name}</span></div>
             <section className='product-stage'>
                 <div className='product-image-section'>
@@ -77,22 +72,6 @@ const ProductPage = ({match}) => {
                     <span id="tags">product</span>
                 </div>
             </section>
-            {/* <section className='product-podium'>
-                <div className='toggle-info'></div>
-                <hr />
-                
-            </section>
-            <section className="related-products">
-                <h2 class='rp-heading'>More like this</h2>
-                <div className="related-products-container">
-                    <div className="related-product"></div>
-                    <div className="related-product"></div>
-                    <div className="related-product"></div>
-                    <div className="related-product"></div>
-                    <div className="related-product"></div>
-                    <div className="related-product"></div>
-                </div>
-            </section> */}
         </main>
     )
 }

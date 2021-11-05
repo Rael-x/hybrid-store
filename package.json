@@ -4,7 +4,10 @@
   "description": "GSE301 Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "node ./server/server.js",
+    "dev-client": "cd ./app && npm start",
+    "watch-style": "cd ./app && sass --watch ./src/scss/hybrid_master.scss:./src/css/hybrid.css"
   },
   "author": "Group 10",
   "license": "ISC"

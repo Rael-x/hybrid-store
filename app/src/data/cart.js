@@ -1,6 +1,9 @@
 class CartBuilder {
     items = []; 
     size = 0;
+    sizeOf() {
+        return this.size;
+    };
     total() {
         var totalPrice = 0.00;
         for (let i = 0; i < this.items.length; i++){
@@ -21,6 +24,12 @@ class CartBuilder {
     isEmpty() {
         return (this.size === 0);
     };
+    contains(item){
+       let hasItem = this.items.find(cartItem=>{
+            return cartItem.id = item.id;
+        })
+        if (hasItem !== null) return true;
+    }
     log(){
         console.log(this.items);
     };
@@ -29,3 +38,4 @@ class CartBuilder {
 
 
 export var cart = new CartBuilder();
+window.cart = cart;

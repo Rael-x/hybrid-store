@@ -16,6 +16,11 @@ const Header = () => {
             <div className='header-right'>
                 <Link className='cart-icon-container' to='/cart'>
                     <img src="../icons/cart-blue-s.png" alt="cart" className='cart-icon' />
+                    <div className='cart-counter'>
+                        <div className="cart-count">
+                            
+                        </div>
+                    </div>
                 </Link>
                 <Link to='/login' className='login-btn'>Login</Link>            
             </div>

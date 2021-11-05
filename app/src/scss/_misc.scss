@@ -6,3 +6,13 @@
         margin-right: 2%;
     }
 }
+.webpage-hidden {
+    transition-duration: 300ms;
+    transform: translateX(-3%);
+    opacity: 0;
+}
+.webpage-visible {
+    transition-duration: 300ms;
+    transform: translateX(0);
+    opacity: 1;
+}

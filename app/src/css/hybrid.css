@@ -9,7 +9,7 @@
   box-shadow: 0 0 2px 0 #9b9a9a;
   justify-content: space-between;
   background-color: white;
-  color: #2626f0;
+  color: #4545f1;
   padding: 0 2%;
 }
 .hybridHeader .header-left, .hybridHeader .header-right {
@@ -91,14 +91,14 @@
   margin: 6% 0;
   width: 60%;
   border-radius: 3px;
-  background: #2626f0;
+  background: #4545f1;
 }
 
 .home {
   margin-top: 55px;
 }
 .home .section-heading {
-  color: #2626f0;
+  color: #4545f1;
   margin-left: 2%;
   font-size: 21pt;
 }
@@ -144,7 +144,7 @@
   margin-bottom: 40px;
 }
 .home .homeSection-item-row .homeSection-item {
-  background: #2626f0;
+  background: #4545f1;
 }
 .home .homeSection-button-row {
   height: 75px;
@@ -240,7 +240,7 @@
 }
 .product-page .product-stage .product-details-section .product-price {
   font-size: 31pt;
-  color: #2626f0;
+  color: #4545f1;
   margin: 2% 0 0 0;
 }
 .product-page .product-stage .product-details-section .product-info {
@@ -314,6 +314,20 @@
   flex-direction: column;
   display: flex;
   color: #9b9a9a;
+}
+
+.cartpage-heading {
+  margin-left: 2%;
+  color: #4545f1;
+}
+
+.cartpage-continue-shopping {
+  padding: 1% 2%;
+  text-decoration: none;
+  background: #2626f0;
+  border: none;
+  color: white;
+  margin-top: 2%;
 }
 
 .big-slide {
@@ -393,7 +407,7 @@
   height: 85%;
   width: 390px;
   overflow: hidden;
-  background-color: #2626f0;
+  background-color: #4545f1;
   background-position: center;
   background-size: cover;
   margin-right: 2%;
@@ -427,7 +441,7 @@
 .hybridFooter {
   height: 400px;
   background-color: white;
-  color: #2626f0;
+  color: #4545f1;
 }
 .hybridFooter .email-newsletter-prompt {
   height: 74px;
@@ -461,7 +475,7 @@
 }
 .hybridFooter .email-newsletter-prompt form input[type=submit] {
   height: 58%;
-  background: #2626f0;
+  background: #4545f1;
   border: none;
   color: white;
 }
@@ -494,6 +508,18 @@
   margin-right: 2%;
 }
 
+.webpage-hidden {
+  transition-duration: 300ms;
+  transform: translateX(-3%);
+  opacity: 0;
+}
+
+.webpage-visible {
+  transition-duration: 300ms;
+  transform: translateX(0);
+  opacity: 1;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #e2e0e0;
@@ -504,6 +530,10 @@ body {
   height: 0;
   overflow: hidden;
   display: none;
+}
+
+.color-red {
+  color: red;
 }
 
 /*# sourceMappingURL=hybrid.css.map */
