@@ -13,7 +13,6 @@ const ProductPage = ({match}) => {
     React.useEffect(()=>{
         document.querySelector('html').scrollTop = 0;
         slideInAnimation('.product-page');
-        if (cart.contains(items[match.params.id])) setButton(cancelBtn);
     }, [match.params.id])
     function removeFromCart (e) {
         e.preventDefault();
